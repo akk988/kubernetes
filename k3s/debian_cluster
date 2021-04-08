@@ -1,0 +1,103 @@
+mirrors:
+  docker.io:
+    endpoint:
+      - "https://akk.off.reg:5000/v2/"
+      - "https://akk.off.reg:5000/v2"
+      - "https://akk.off.reg:5000"
+      - "http://akk.off.reg:5000"
+      - "https://akk.off.reg"
+      - "akk.off.reg:5000/v2/"
+      - "akk.off.reg:5000/v2"
+      - "akk.off.reg:5000/"
+      - "akk.off.reg:5000"
+      - "akk.off.reg"
+#1
+configs:
+  "https://akk.off.reg:5000/v2/":
+    auth:
+      username: testuser # this is the registry username
+      password: testpassword # this is the registry password
+    tls:
+      cert_file: # path to the cert file used in the registry
+      key_file:  # path to the key file used in the registry
+      ca_file:   /etc/docker/certs.d/akk.off.reg:5000/d2.crt # path to the ca file used$
+#2
+configs:
+  "https://akk.off.reg:5000/v2":
+    auth:
+      username: testuser # this is the registry username
+      password: testpassword # this is the registry password
+    tls:
+      cert_file: # path to the cert file used in the registry
+      key_file:  # path to the key file used in the registry
+      ca_file:   /etc/docker/certs.d/akk.off.reg:5000/d2.crt # path to the ca file used$
+#3
+configs:
+  "https://akk.off.reg:5000":
+    auth:
+      username: testuser # this is the registry username
+      password: testpassword # this is the registry password
+    tls:
+      cert_file: # path to the cert file used in the registry
+      key_file:  # path to the key file used in the registry
+      ca_file:   /etc/docker/certs.d/akk.off.reg:5000/d2.crt # path to the ca file used$
+#4
+configs:
+  "http://akk.off.reg:5000":
+    auth:
+      username: testuser # this is the registry username
+      password: testpassword # this is the registry password
+    tls:
+      cert_file: # path to the cert file used in the registry
+      key_file:  # path to the key file used in the registry
+      ca_file:   /etc/docker/certs.d/akk.off.reg:5000/d2.crt # path to the ca file used
+#5
+configs:
+  "https://akk.off.reg":
+    auth:
+      username: testuser # this is the registry username
+      password: testpassword # this is the registry password
+    tls:
+      cert_file: # path to the cert file used in the registry
+      key_file:  # path to the key file used in the registry
+      ca_file:   /etc/docker/certs.d/akk.off.reg:5000/d2.crt # path to the ca file used$
+#6
+configs:
+  "akk.off.reg:5000/v2/":
+    auth:
+      username: testuser # this is the registry username
+      password: testpassword # this is the registry password
+    tls:
+      cert_file: # path to the cert file used in the registry
+      key_file:  # path to the key file used in the registry
+      ca_file:   /etc/docker/certs.d/akk.off.reg:5000/d2.crt # path to the ca file used$
+#7
+configs:
+  "akk.off.reg:5000":
+    auth:
+      username: testuser # this is the registry username
+      password: testpassword # this is the registry password
+    tls:
+      cert_file: # path to the cert file used in the registry
+      key_file:  # path to the key file used in the registry
+      ca_file:   /etc/docker/certs.d/akk.off.reg:5000/d2.crt # path to the ca file used$
+#8
+configs:
+  "akk.off.reg":
+    auth:
+      username: testuser # this is the registry username
+      password: testpassword # this is the registry password
+   tls:
+      cert_file: # path to the cert file used in the registry
+      key_file:  # path to the key file used in the registry
+      ca_file:   /etc/docker/certs.d/akk.off.reg:5000/d2.crt # path to the ca file used$
+#9
+configs:
+  "https://akk.off.reg:5000":
+    #auth:
+     # username: testuser # this is the registry username
+     # password: testpassword # this is the registry password
+    tls:
+      cert_file: # path to the cert file used in the registry
+      key_file:  # path to the key file used in the registry
+      ca_file:   /etc/docker/certs.d/akk.off.reg:500
